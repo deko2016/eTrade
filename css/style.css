@@ -424,8 +424,8 @@ nav ul li ul.dropdown-main li {
 }
 
 .menu > li > a {
-  padding: 20px 18px;
-  display: block;
+  padding: 12px 18px !important;
+  display: block !important;
 }
 
 .menu > li:hover > a {
@@ -443,7 +443,7 @@ nav ul li ul.dropdown-main li {
   position: absolute;
   list-style: none;
   top: 0px;
-  left: 153px;
+  left: 141px;
   width: 386%;
   min-height: 150%;
   margin-left: 100px;
@@ -451,12 +451,10 @@ nav ul li ul.dropdown-main li {
   margin-top: 30px;
   padding: 0;
   z-index: 99;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 24px;
   overflow: hidden;
-  border-left: 2px solid #f6f7fb;
+  box-shadow: 40px 40px 48px 0pxrgba 36, 41, 47, 0.1;
   border-top: 2px solid #f6f7fb;
-  border-right: 6px solid #f6f7fb;
   border-bottom: 2px solid #f6f7fb;
 }
 
@@ -589,4 +587,32 @@ nav ul li ul.dropdown-main li {
   right: 0;
   z-index: -1;
   transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.icon {
+  background-image: url("https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/cat-01.png");
+}
+
+.down {
+  margin-left: 8rem;
+  font-size: 8px;
+}
+
+.down:hover {
+  color: rgb(0, 140, 255);
+  transition: 0.1s;
+  transform: rotate(-90deg);
+}
+
+.slider-menu {
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  padding: 48px 50px;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 20px;
+  height: 10px;
+  font-size: 8px;
 }/*# sourceMappingURL=style.css.map */
