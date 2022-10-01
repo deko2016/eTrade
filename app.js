@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 
 // dropdown
@@ -120,4 +122,139 @@ iconButton.on("click", function() {
   setTimeout(function() {
       $(iconButton).addClass('aos-animate');
   }, 400);
+=======
+
+
+// dropdown
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+
+}
+
+
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show1");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn1')) {
+    var myDropdown1 = document.getElementById("myDropdown1");
+      if (myDropdown1.classList.contains('show1')) {
+        myDropdown1.classList.remove('show1');
+      }
+    }
+  }
+  $('dropdown-content').on('click', function(event){
+    
+    event.stopPropagation();
+});
+
+
+
+=======
+>>>>>>> 50abdac (feat:Create card & animation headphone)
+// dropdown
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+
+}
+
+
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show1");
+}
+
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn1')) {
+    var myDropdown1 = document.getElementById("myDropdown1");
+    if (myDropdown1.classList.contains('show1')) {
+      myDropdown1.classList.remove('show1');
+    }
+  }
+}
+$('dropdown-content').on('click', function (event) {
+
+  event.stopPropagation();
+});
+
+
+
+// dropdown
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+
+}
+
+
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show1");
+}
+
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn1')) {
+    var myDropdown1 = document.getElementById("myDropdown1");
+    if (myDropdown1.classList.contains('show1')) {
+      myDropdown1.classList.remove('show1');
+    }
+  }
+}
+$('dropdown-content').on('click', function (event) {
+
+<<<<<<< HEAD
+  }, {
+
+    breakpoint: 300,
+    settings: "unslick" // destroys slick
+
+  }]
+});
+
+
+AOS.init();
+
+
+AOS.init({
+  once: true,
+  easing: 'ease-in-out'
+});
+var iconButton = $("button");
+iconButton.on("click", function() {
+  $(iconButton).removeClass('aos-animate');
+  setTimeout(function() {
+      $(iconButton).addClass('aos-animate');
+  }, 400);
+>>>>>>> f54be8a (feat:Create slider & countdown time)
+=======
+  event.stopPropagation();
+>>>>>>> 50abdac (feat:Create card & animation headphone)
 });
