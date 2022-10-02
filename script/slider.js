@@ -149,6 +149,14 @@ $('.shop-content').slick({
   });
 
 
+
+  $('.categorie-product').slick({
+    infinite: true,
+    slidesToShow: 7,
+    slidesToScroll: 8
+  });
+
+
     
    
             

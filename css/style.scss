@@ -1764,7 +1764,11 @@ span {
 }
 
 .sound-area {
-    padding: 120px 0;
+    padding: 60px 0 !important;
+}
+
+.sound-area {
+
 
     .container {
         width: 200px;
@@ -3044,23 +3048,323 @@ html {
 }
 
 
-.service-area{
-    #zimba{
+.service-area {
+    #zimba {
         display: flex;
-        border: none;  
+        border: none;
+        margin-left: 5px;
 
-        
-        
+
     }
-    .icon img{
+
+    .icon img {
         max-width: 45px;
     }
-    .service-box{
+
+    .service-box {
         display: flex;
     }
 
-    .content{
+    .content {
         margin-left: 20px;
     }
-    
+
+}
+
+
+// .change:hover{
+//     background: url('https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png');
+//     height: 286px;width: 287px ;
+// }
+
+.footer-area {
+    .inner ul li {
+
+        list-style-type: none;
+
+    }
+
+    .support-list-item {
+        margin-left: 0.5rem;
+    }
+
+    .footer-top {
+        margin-top: 60px;
+    }
+
+    .add-group {
+        display: flex;
+    }
+
+    .footer-top p {
+        font-size: 16px;
+        line-height: 1.7;
+        font-weight: 400;
+        color: #777777;
+        margin: 0 0 30px;
+        margin-left: 0.5rem;
+    }
+
+    .footer-top li a {
+        font-size: 16px;
+        font-family: "DM Sans", sans-serif;
+        color: #777777;
+    }
+
+    .footer-top h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        margin-left: 7px;
+    }
+
+    .support-list-item li {
+        margin-left: -30px;
+        margin-bottom: 13px;
+    }
+
+
+    .account ul {
+        height: 1vh;
+        width: 4vw;
+        min-width: 173px;
+        line-height: 37px;
+        margin-left: -2.2rem;
+        margin-top: 20px;
+
+    }
+
+    .account li {
+        position: relative;
+        text-decoration: none;
+        font-family: "DM Sans", sans-serif;
+        color: #777777;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+
+    .account li:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 1.5px;
+        bottom: -1px;
+        width: 0;
+        left: 12px;
+        transition: 0.4s;
+    }
+
+    .account li:hover {
+        color: black;
+    }
+
+    .account li:hover:after {
+        width: 100%;
+    }
+
+    .link ul {
+        height: 1vh;
+        width: 4vw;
+        min-width: 173px;
+        line-height: 37px;
+        margin-left: -2.2rem;
+        margin-top: 20px;
+
+    }
+
+    .link li {
+        position: relative;
+        text-decoration: none;
+        font-family: "DM Sans", sans-serif;
+        color: #777777;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+
+    .link li:after {
+        content: "";
+        position: absolute;
+        background-color: black;
+        height: 1.5px;
+        bottom: -1px;
+        width: 0;
+        left: 12px;
+        transition: 0.4s;
+    }
+
+    .link li:hover {
+        color: black;
+    }
+
+    .link li:hover:after {
+        width: 100%;
+    }
+
+
+    .download .inner span {
+        color: #777777;
+        font-size: 16px;
+    }
+
+    .add-group {
+        margin-top: 15px;
+    }
+
+    .app {
+        margin-left: 20px;
+    }
+
+    .app-store {
+        margin-bottom: 20px;
+    }
+
+    .google-play {
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+}
+
+.footer-bottom {
+    overflow-x: hidden;
+
+    ul {
+        list-style-type: none;
+    }
+
+    .social {
+        margin-left: -1.7rem;
+    }
+
+    .social ul {
+        display: flex;
+    }
+
+    .payment-right {
+        display: flex;
+    }
+
+    .payment ul {
+        display: flex;
+    }
+
+    .link {
+        margin-top: 5px;
+    }
+
+    .link ul li {
+        font-size: 14px;
+        font-weight: 500;
+        color: #777777;
+
+        a {
+            font-size: 14px;
+            font-weight: 500;
+            color: #777777;
+        }
+    }
+
+    .payment ul img {
+        height: 20px;
+        align-items: center !important;
+    }
+
+    .payment-right {
+        margin-right: -1.4rem;
+
+        span {
+            color: #777777;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 3.5px;
+            margin-right: -9px;
+        }
+    }
+
+    .payment ul li {
+        margin-right: 22px;
+    }
+
+    .social ul li i {
+        margin: 8.5px;
+        color: #777777;
+        font-size: 16px;
+    }
+
+}
+
+
+.browse-category {
+    padding: 120px 0;
+
+    .title-shp {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        color: #8C71DB;
+
+    }
+
+    .section-title i {
+        background-color: #8C71DB;
+        color: white;
+        height: 24px;
+        width: 24px;
+        line-height: 24px;
+        border-radius: 50%;
+        font-size: 12px;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    .section-title .title {
+        font-size: 36px;
+        color: #292930;
+        font-family: "DM Sans", sans-serif;
+        line-height: 1.3;
+        font-weight: bold;
+    }
+
+    .slick-track {}
+
+    .categorie-product {
+
+
+        a {
+            padding: 28px 12px;
+            display: block;
+        }
+
+
+        .product-box {
+            border: 0.5px solid #F7F7F7;
+            position: relative;
+            text-align: center;
+            border-radius: 6px;
+            transition: .5s ease-in-out;
+            z-index: 1;
+            margin: 10px;
+
+            h6 {
+                font-size: 16px;
+                line-height: 24px;
+                color: #292930;
+            }
+        }
+
+
+
+
+
+
+        img {
+            margin: 0 auto 8px;
+            min-height: 41px;
+        }
+    }
 }
