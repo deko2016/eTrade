@@ -13,7 +13,6 @@
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
@@ -24,7 +23,7 @@
 <body>
 
     <header>
-        <div class="header-top">
+        <div class="header-top d-flex">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-2 col-sm-3 col-5">
@@ -48,26 +47,32 @@
                     </div>
 
                     <div class="col-lg-3">
-                        <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn ">USD
-                                <i class="fa-solid fa-angle-down"></i>
-                            </button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a class="item" href="#home">USD</a>
-                                <a class="item" href="#about">AUD</a>
-                                <a class="item" href="#contact">EUR</a>
+                        
+                        <div class="alll">
+                       
+                            <div class="dropdown dropdownn">
+                                <button class="btn btn-secondary dropdown-toggle dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                 USD
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">USD</a></li>
+                                  <li><a class="dropdown-item" href="#">AUD</a></li>
+                                  <li><a class="dropdown-item" href="#">EUR</a></li>
+                                </ul>
+                              </div>
+
+                            <div class="dropdown dropdown1">
+                                <button class="btn btn-secondary dropdown-toggle dropbtn1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    EN
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu1">
+                                  <li><a class="dropdown-item" href="#">EN</a></li>
+                                  <li><a class="dropdown-item" href="#">ARB</a></li>
+                                  <li><a class="dropdown-item" href="#">SPN</a></li>
+                                </ul>
+                              </div>
                             </div>
-                        </div>
-                        <div class="dropdown1">
-                            <button onclick="myFunction1()" class="dropbtn1">EN
-                                <i class="fa-solid fa-angle-down"></i>
-                            </button>
-                            <div id="myDropdown1" class="dropdown-content1">
-                                <a class="item" href="">EN</a>
-                                <a class="item" href="">ARB</a>
-                                <a class="item" href="">SPN</a>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -681,7 +686,7 @@
                                         </ul>
                                     </li>
                                     <li class="sub-menu">
-                                        <a class="home-txt" href="#">Contact </a>
+                                        <a class="home-txt" href="/assets/contact.html">Contact </a>
 
                                     </li>
                                 </ul>
@@ -726,7 +731,7 @@
                         <h1 data-aos="fade-up" data-aos-duration="2200" class="title">Up to 60% <br> off Sale</h1>
 
                         <div class="shop-now">
-                            <a class="shop" href="">Shop Now
+                            <a data-aos="fade-up" data-aos-duration="2200" class="shop" href="">Shop Now
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -745,7 +750,7 @@
                         <h1 data-aos="fade-up" data-aos-duration="2200" class="title2">Up to 60% <br> off Voucher</h1>
 
                         <div class="shop-now1">
-                            <a class="shop1" href="">Shop Now
+                            <a data-aos="fade-up" data-aos-duration="2200" class="shop1" href="">Shop Now
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -765,7 +770,7 @@
                         </div>
                         <h1 data-aos="fade-up" data-aos-duration="2200" class="title3">Up to 60% <br> off Voucher</h1>
                         <div class="shop-now2">
-                            <a class="shop2" href="">Shop Now
+                            <a data-aos="fade-up" data-aos-duration="2200" class="shop2" href="">Shop Now
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                         </div>
@@ -835,7 +840,7 @@
 
     <section class="shop container-fluid">
 
-        <div data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1500" class="shop-content">
+        <div class="shop-content">
 
             <div id="1" class="product-box">
 
@@ -1041,6 +1046,10 @@
 
     </section>
 
+
+    <hr style="width:87%;text-align:left;margin-left:6.3rem;margin-top: -3rem;color: #c7c1c1;">
+
+
     <div class="browse-category">
         <div class="container">
             <div class="section-title">
@@ -1054,98 +1063,126 @@
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-7.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-7.png"
+                            alt="">
                         <h6 cat-title>Networking</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-8.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-8.png"
+                            alt="">
                         <h6 cat-title>PC Gaming</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-1.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-1.png"
+                            alt="">
                         <h6 cat-title>Smartwatches</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-9.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-9.png"
+                            alt="">
                         <h6 cat-title>Headphones</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-10.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-10.png"
+                            alt="">
                         <h6 cat-title>Camera & Photo</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-8.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-8.png"
+                            alt="">
                         <h6 cat-title>Video Games</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-1.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-1.png"
+                            alt="">
                         <h6 cat-title>Sports</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-4.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-4.png"
+                            alt="">
                         <h6 cat-title>Phones</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-5.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-5.png"
+                            alt="">
                         <h6 cat-title>Computers</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-11.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-11.png"
+                            alt="">
                         <h6 cat-title>Accessories</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-6.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-6.png"
+                            alt="">
                         <h6 cat-title>Laptops</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-2.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-2.png"
+                            alt="">
                         <h6 cat-title>Monitors</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-7.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-7.png"
+                            alt="">
                         <h6 cat-title>Networking</h6>
                     </a>
                 </div>
                 <div class="product-box">
 
                     <a href="">
-                        <img class="img-tbl" src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-8.png" alt="">
+                        <img class="img-tbl"
+                            src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/categories/elec-8.png"
+                            alt="">
                         <h6 cat-title>Accessories</h6>
                     </a>
                 </div>
@@ -1170,7 +1207,7 @@
                 <h2 class="title">Best Selling Products</h2>
             </div>
 
-            <div st data-aos="zoom-out" data-aos-delay="100" data-aos-duration="1500" class="shop-content">
+            <div class="shop-content">
 
                 <div id="1" class="product-box">
 
@@ -1612,7 +1649,7 @@
 
                         <div class="change1">
                             <img style="height: 286px;
-                    width: 287px;"
+                        width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-15.png"
                                 alt="" class="product-img">
                             <img class="hover-img"
@@ -1620,7 +1657,7 @@
                                 alt="">
                         </div>
                         <div style="top: 52%;
-                    left: 27.7%;" class="product-links">
+                        left: 27.7%;" class="product-links">
                             <li><a href=""><i class="fa-regular fa-heart heart"></i></a></li>
                             <button style="margin-bottom: 18px;" type="button" href="" class="btn btn-primary btn_add ">
                                 Add to cart</button>
@@ -1637,10 +1674,11 @@
                         </div>
                         <div id="color" class="color-variant-wrapper">
                             <div id="btn" class="color-variant">
-                                <span>
+                                <span class="color">
 
-
-                                    <span onclick="myDiv()" style="" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -1678,8 +1716,9 @@
                         <h5 style="margin-left: 15px;margin-top: 31px;" class="product-title">Syslish Wooden Chair</h5>
                         <div class="prodd-price1">
                             <span class="current-price">
-                                $40
+                                $29.99
                             </span>
+                            <span style="" class="price">$49.99</span>
 
 
                         </div>
@@ -1688,7 +1727,9 @@
                                 <span>
 
 
-                                    <span onclick="myDiv()" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back1" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -1952,7 +1993,7 @@
                             <span id="sale2">20% OFF</span>
                         </a>
                         <div style="top: 52%;
-                    left: 42.8%;" class="product-links">
+                    left: 22.8%;" class="product-links">
                             <li><a href=""><i class="fa-regular fa-heart heart"></i></a></li>
                             <button style="margin-bottom: 18px;" type="button" href="" class="btn btn-primary btn_add ">
                                 Add to cart</button>
@@ -1966,11 +2007,13 @@
                         </span>
                         <span class="price">$35</span>
                         <div id="color" class="color-variant-wrapper">
-                            <div style="margin-left: 23.5px;" id="btn" class="color-variant">
+                            <div style="" id="btn" class="color-variant">
                                 <span>
 
 
-                                    <span onclick="myDiv()" style="" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -1993,7 +2036,7 @@
                         </a>
 
                         <div style="top: 52%;
-                        left: 47.8%;" class="product-links">
+                        left: 27.8%;" class="product-links">
                             <li><a href=""><i class="fa-regular fa-heart heart"></i></a></li>
                             <button style="margin-bottom: 18px;" type="button" href="" class="btn btn-primary btn_add ">
                                 Add to cart</button>
@@ -2010,7 +2053,9 @@
                                 <span>
 
 
-                                    <span onclick="myDiv()" style="" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -2035,7 +2080,7 @@
                         <span id="sale4">20% OFF</span>
 
                         <div style="top: 52%;
-                            left: 52.8%;" class="product-links">
+                            left: 32.8%;" class="product-links">
                             <li><a href=""><i class="fa-regular fa-heart heart"></i></a></li>
                             <button style="margin-bottom: 18px;" type="button" href="" class="btn btn-primary btn_add ">
                                 Add to cart</button>
@@ -2077,7 +2122,7 @@
                             src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png"
                             alt="">
                         <div style="top: 52%;
-                                left: 57.8%" class="product-links">
+                                left: 37.8%" class="product-links">
                             <li><a href=""><i class="fa-regular fa-heart heart"></i></a></li>
                             <button style="margin-bottom: 18px;" type="button" href="" class="btn btn-primary btn_add ">
                                 Add to cart</button>
@@ -2099,7 +2144,9 @@
                                 <span class="color">
 
 
-                                    <span style="border: 3px solid #ff8666;" onclick="myDiv()" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -2143,7 +2190,9 @@
                                 <span>
 
 
-                                    <span onclick="myDiv()" style="" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -2183,7 +2232,9 @@
                                 <span>
 
 
-                                    <span onclick="myDiv()" style="" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -2272,7 +2323,9 @@
                                 <span class="color">
 
 
-                                    <span style="border: 3px solid #ff8666;" onclick="myDiv()" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -2282,152 +2335,177 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="row mx-auto button-all">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                <a href="shop.html" class="axil-btn btn-bg-lighter allproduct btn-load-more">View All Products</a>
 
             </div>
-
-
-            <div class="row mx-auto">
-
-                <button type="button" class="btn btn-light allproduct">View All Products</button>
-
-            </div>
-
-
 
 
 
         </div>
-
-
-
-
 
 
 
     </div>
 
 
-    <!-- <div class="container-fluid">
-        <div class="row">
-            <div class="feedback-team">
-        
-        
-                <div class="feedback-title">
-                    <span class="music">
-                        <i class="fa-solid fa-quote-left quote"></i>
+    <div class="users-feedback">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <span class="title-shp"><i class="fa-solid fa-quote-left"></i>
                         Testimonials
                     </span>
-        
                     <h2 class="title">Users Feedback</h2>
                 </div>
-        
-                <div class="users-feedback">
-        
-                    <div class="all">
-        
-                    
-        
-                    <div class="reviews">
-                        <p>“ It’s amazing how much easier it has been to
-                            meet new people and create instantly non
-                            connections. I have the exact same personal
-                            the only thing that has changed is my mind
-                            set and a few behaviors. “</p>
+                <div class="all1 ">
+
+                    <div class="col-lg-3">
+
+
+                        <div class="boxes">
+                            <p>“ It’s amazing how much easier it has been to
+                                meet new people and create instantly non
+                                connections. I have the exact same personal
+                                the only thing that has changed is my mind
+                                set and a few behaviors. “</p>
+
+                        </div>
                         <div class="media">
-                            <div class="thumbnail">
+                            <div class="img">
+                                <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/testimonial/image-1.png"
+                                    alt="">
+                            </div>
+                            <div class="media-body">
+                                <span>Head Of Idea</span>
+                                <h6>James C. Anderson</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+
+
+                        <div id="boxes-tp1" class="boxes">
+                            <p>“ It’s amazing how much easier it has been to
+                                meet new people and create instantly non
+                                connections. I have the exact same personal
+                                the only thing that has changed is my mind
+                                set and a few behaviors. “</p>
+                        </div>
+                        <div class="media">
+                            <div class="img">
                                 <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/testimonial/image-2.png"
                                     alt="">
                             </div>
                             <div class="media-body">
-                                <span class="designation">Head Of Idea</span>
-                                <h6 class="title">James C. Anderson</h6>
+                                <span>Head Of Idea</span>
+                                <h6>James C. Anderson</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="reviews1">
-                        <p>“ It’s amazing how much easier it has been to
-                            meet new people and create instantly non
-                            connections. I have the exact same personal
-                            the only thing that has changed is my mind
-                            set and a few behaviors. “</p>
+
+
+                    <div class="col-lg-3">
+
+
+                        <div class="boxes">
+                            <p>“ It’s amazing how much easier it has been to
+                                meet new people and create instantly non
+                                connections. I have the exact same personal
+                                the only thing that has changed is my mind
+                                set and a few behaviors. “</p>
+                        </div>
                         <div class="media">
-                            <div class="thumbnail">
+                            <div class="img">
+                                <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/testimonial/image-3.png"
+                                    alt="">
+                            </div>
+                            <div class="media-body">
+                                <span>Head Of Idea</span>
+                                <h6>James C. Anderson</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+
+
+                        <div class="boxes">
+                            <p>“ It’s amazing how much easier it has been to
+                                meet new people and create instantly non
+                                connections. I have the exact same personal
+                                the only thing that has changed is my mind
+                                set and a few behaviors. “</p>
+                        </div>
+                        <div class="media">
+                            <div class="img">
+                                <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/testimonial/image-1.png"
+                                    alt="">
+                            </div>
+                            <div class="media-body">
+                                <span>Head Of Idea</span>
+                                <h6>James C. Anderson</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+
+
+                        <div class="boxes">
+                            <p>“ It’s amazing how much easier it has been to
+                                meet new people and create instantly non
+                                connections. I have the exact same personal
+                                the only thing that has changed is my mind
+                                set and a few behaviors. “</p>
+                        </div>
+                        <div class="media">
+                            <div class="img">
                                 <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/testimonial/image-2.png"
                                     alt="">
                             </div>
                             <div class="media-body">
-                                <span class="designation">Head Of Idea</span>
-                                <h6 class="title">James C. Anderson</h6>
+                                <span>Head Of Idea</span>
+                                <h6>James C. Anderson</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="reviews2">
-                        <p>“ It’s amazing how much easier it has been to
-                            meet new people and create instantly non
-                            connections. I have the exact same personal
-                            the only thing that has changed is my mind
-                            set and a few behaviors. “</p>
+
+
+                    <div class="col-lg-3">
+
+
+                        <div class="boxes">
+                            <p>“ It’s amazing how much easier it has been to
+                                meet new people and create instantly non
+                                connections. I have the exact same personal
+                                the only thing that has changed is my mind
+                                set and a few behaviors. “</p>
+                        </div>
                         <div class="media">
-                            <div class="thumbnail">
-                                <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/testimonial/image-2.png"
+                            <div class="img">
+                                <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/testimonial/image-3.png"
                                     alt="">
                             </div>
                             <div class="media-body">
-                                <span class="designation">Head Of Idea</span>
-                                <h6 class="title">James C. Anderson</h6>
+                                <span>Head Of Idea</span>
+                                <h6>James C. Anderson</h6>
                             </div>
                         </div>
                     </div>
-                    <div class="reviews3">
-                        <p>“ It’s amazing how much easier it has been to
-                            meet new people and create instantly non
-                            connections. I have the exact same personal
-                            the only thing that has changed is my mind
-                            set and a few behaviors. “</p>
-                        <div class="media">
-                            <div class="thumbnail">
-                                <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/testimonial/image-2.png"
-                                    alt="">
-                            </div>
-                            <div class="media-body">
-                                <span class="designation">Head Of Idea</span>
-                                <h6 class="title">James C. Anderson</h6>
-                            </div>
-                        </div>
-                    </div>
-        
+
+
                 </div>
-        
-        
-                </div>
-        
-        
-        
-        
             </div>
 
         </div>
-    </div> -->
+    </div>
 
+
+    </div>
+    </div>
 
 
     <div class="news-arrivals">
@@ -2462,7 +2540,9 @@
                             <div id="color" class="color-variant-wrapper">
                                 <div id="btn" class="color-variant">
                                     <span style="margin-right: 5px;">
-                                        <span onclick="myDiv()" style="" class="dot"></span>
+                                        <a style="" class="back" href="">
+                                            <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                        </a>
                                         <span class="dot1"></span>
                                         <span class="dot2"></span>
                                     </span>
@@ -2507,7 +2587,9 @@
                                 <span>
 
 
-                                    <span onclick="myDiv()" style="" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -2554,7 +2636,9 @@
                                 <span>
 
 
-                                    <span onclick="myDiv()" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -2597,7 +2681,9 @@
                         <div id="color" class="color-variant-wrapper">
                             <div id="btn" class="color-variant">
                                 <span>
-                                    <span onclick="myDiv()" style="" class="dot"></span>
+                                    <a style="" class="back" href="">
+                                        <span id="back2" onclick="myDiv()" style="" class="dot"></span>
+                                    </a>
                                     <span class="dot1"></span>
                                     <span class="dot2"></span>
                                 </span>
@@ -3078,6 +3164,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js
+    "></script>
     <script src="/script/slider.js"></script>
     <script src="/script/countdown.js"></script>
     <script src="app.js"></script>

@@ -3,8 +3,8 @@ $(".slider").slick({
     // normal options...
     infinite: false,
     dots: true,
-    // autoplay: true,
-    // autoplaySpeed: 1500,
+    autoplay: true,
+    autoplaySpeed: 3000,
     
     // the magic
     responsive: [{
@@ -92,6 +92,7 @@ $('.shop-content').slick({
 
   // explore product 
 
+
   $('.explore-product').slick({
     infinite: true,
     slidesToShow: 4,
@@ -106,40 +107,22 @@ $('.shop-content').slick({
 
 
 
-  
-  $('.users-feedback').slick({
-    infinite: true,   
+  // users feedback
+
+  $('.all1').slick({
+    infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
+    slidesToScroll: 1
   });
+ 
+
+
+  $('.slider-feedback').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+  });
+ 
 
 
   $('.news-product').slick({
@@ -152,11 +135,19 @@ $('.shop-content').slick({
 
   $('.categorie-product').slick({
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2500,
     slidesToShow: 7,
     slidesToScroll: 8
   });
 
 
-    
-   
+  $('.campaign').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+  });
+
+  
             
