@@ -50,32 +50,34 @@
                     </div>
 
                     <div class="col-lg-3">
-                        
+
                         <div class="alll">
-                       
+
                             <div class="dropdown dropdownn">
-                                <button class="btn btn-secondary dropdown-toggle dropbtn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                 USD
+                                <button class="btn btn-secondary dropdown-toggle dropbtn" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    USD
                                 </button>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">USD</a></li>
-                                  <li><a class="dropdown-item" href="#">AUD</a></li>
-                                  <li><a class="dropdown-item" href="#">EUR</a></li>
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">AUD</a></li>
+                                    <li><a class="dropdown-item" href="#">EUR</a></li>
                                 </ul>
-                              </div>
+                            </div>
 
                             <div class="dropdown dropdown1">
-                                <button class="btn btn-secondary dropdown-toggle dropbtn1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn-secondary dropdown-toggle dropbtn1" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     EN
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu1">
-                                  <li><a class="dropdown-item" href="#">EN</a></li>
-                                  <li><a class="dropdown-item" href="#">ARB</a></li>
-                                  <li><a class="dropdown-item" href="#">SPN</a></li>
+                                    <li><a class="dropdown-item" href="#">EN</a></li>
+                                    <li><a class="dropdown-item" href="#">ARB</a></li>
+                                    <li><a class="dropdown-item" href="#">SPN</a></li>
                                 </ul>
-                              </div>
                             </div>
-                        
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -615,7 +617,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="header-main">
-                            <nav class="navbar">
+                            <nav id="navbar" class="navbar">
                                 <ul>
                                     <li class="sub-menu">
                                         <div class="home-txt1">
@@ -640,7 +642,7 @@
                                         </a>
                                         <ul class="dropdown-main">
                                             <li><a href="./assets/shop-sidebar.html">Shop With Sidebar</a></li>
-                                            <li><a href="#">Shop no Sidebar</a></li>
+                                            <li><a href="./assets/shop-sidebar.html">Shop no Sidebar</a></li>
                                             <li><a href="#">Product Variation 1</a></li>
                                             <li><a href="#">Product Variation 2</a></li>
                                             <li><a href="#">Product Variation 3</a></li>
@@ -700,15 +702,48 @@
                         <div class="right-icon">
                             <div class="wish-list">
 
-                                <i class="fa-regular fa-heart"></i>
+                                <a href="">
+
+                                    <i class="fa-regular fa-heart dropbtn1"></i>
+                                </a>
+
+
                             </div>
                             <div class="cart-shopping">
-                                <i class="fa-solid fa-cart-shopping">
-                                    <span class="count">3</span>
-                                </i>
+                                <a href="">
+                                    <i class="fa-solid fa-cart-shopping dropbtn2">
+                                        <span class="count">3</span>
+                                    </i>
+                                </a>
+
+
                             </div>
                             <div class="login">
-                                <i class="fa-regular fa-user"></i>
+                                <div class="dropdown">
+                                    <i onclick="myFunction()" class="fa-regular fa-user dropbtn"></i>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <span class="link">QUICKLINKS</span>
+                                        <a href="">My Account</a>
+                                        <a href="#">Initiate return</a>
+                                        <a href="">Support</a>
+                                        <a href="">Language</a>
+                                        <h2 class="hr-lines"></h2>
+                                        <h2 class="hr-lines1"></h2>
+                                        <h2 class="hr-lines2"></h2>
+
+                                        <div class="footer-drop">
+
+                                            <a href="/login.html"><button type="button" class="btn btn-primary"
+                                                    disabled>Login</button>
+                                            </a>
+                                            <div class="footer text-center">
+                                                <a class="account" href="">No account yet? </a>
+                                                <a class="register" href="">REGISTER HERE.</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -796,7 +831,7 @@
             <div class="col-lg-3">
                 <div class="product-right">
                     <div class="product-main">
-                        <a href="">
+                        <a href="./assets/product.html">
                             <img src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/product-41.png"
                                 alt="Product">
                         </a>
@@ -913,6 +948,7 @@
                 </div>
 
                 <h5 style="margin-left: -69px;" class="product-title">Women's Stylish Hat</h5>
+
                 <div class="prodd-price1">
                     <span class="price">$30
                     </span>
@@ -1265,16 +1301,7 @@
                             Add to cart</button>
                         <li><a class="eye" href="#"><i class="fa fa-eye"></i></a></li>
                     </div>
-                    <div class="product-rating">
-                        <span class="icon">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            (24)
-                        </span>
-                    </div>
+
                     <h5 style="margin-right: 8rem;" class="product-title">Nike Shoe</h5>
                     <div class="prodd-price">
                         <span style="" class="current-price">
@@ -1594,17 +1621,17 @@
 
                 <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
 
-                    <div  id="1" class="product-box">
+                    <div id="1" class="product-box">
 
 
-                        <div  class="change">
+                        <div class="change">
 
 
                             <img id="my-img" class="Img1" style="height: 286px;
                     width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png"
                                 alt="" class="product-img">
-                            <img  class="Img2" style="height: 286px;
+                            <img class="Img2" style="height: 286px;
                             width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png"
                                 alt="">
@@ -1651,12 +1678,12 @@
                 <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
                     <div id="2" class="product-box">
 
-                        <div class="change1">
+                        <div class="change">
                             <img style="height: 286px;
                         width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-15.png"
-                                alt="" class="product-img">
-                            <img class="hover-img"
+                                alt="" class="Img1">
+                            <img class="Img2"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-24.png"
                                 alt="">
                         </div>
@@ -1698,16 +1725,18 @@
 
                 <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
                     <div id="3" class="product-box">
-                        <a href="">
+
+                        <div class="change">
                             <img style="height: 286px;
                     width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/furniture/product-1.png"
-                                alt="" class="product-img">
-                            <img class="hover-img"
+                                alt="" class="Img1">
+                            <img class="Img2" style="height: 286px;
+                            width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/furniture/product-2.png"
                                 alt="">
                             <span id="sale1">20% OFF</span>
-                        </a>
+                        </div>
 
                         <div style="top: 52%;
                     left: 32.7%;" class="product-links">
@@ -1748,15 +1777,19 @@
 
                 <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
                     <div id="4" class="product-box">
-                        <a style="background-color: #F7F7F7;" href="">
+                        <div class="change">
+
+
                             <img style="height: 286px;
                     width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/jewellery/product-3.png"
-                                alt="" class="product-img">
-                            <img class="hover-img"
+                                alt="" class="Img1">
+                            <img class="Img2" style="height: 286px;
+                            width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/jewellery/product-4.png"
                                 alt="">
-                        </a>
+                        </div>
+
 
                         <div style="top: 52%;
                     left: 37.7%;" class="product-links">
@@ -1789,21 +1822,27 @@
 
                     </div>
                 </div>
+
                 <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
 
-                    <div id="1" class="product-box">
+                    <div id="5" class="product-box">
 
 
-                        <a href="">
+                        <div class="change">
+
+
                             <img id="img1" style="height: 286px;
-                    width: 287px; display: block;"
+                    width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-01.png"
-                                alt="" class="product-img">
-                            <img class="hover-img"
-                                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png"
+                                alt="" class="Img1">
+                            <img style="height: 286px;
+                            width: 287px;" class="Img2"
+                                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/fashion/product-12.png"
                                 alt="">
                             <span id="sale">20% OFF</span>
-                        </a>
+
+                        </div>
+
 
 
 
@@ -1842,7 +1881,7 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                    <div id="2" class="product-box">
+                    <div id="6" class="product-box">
 
                         <img id="img2" style="height: 286px;
                     width: 287px;"
@@ -1887,17 +1926,20 @@
                 </div>
 
                 <div class="col-xl-3 col-lg-4 col-sm-6 col-12 mb--30">
-                    <div id="3" class="product-box">
-                        <a href="">
+                    <div id="7" class="product-box">
+
+                        <div class="change">
+
+                        
                             <img style="height: 286px;
                     width: 287px;"
                                 src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/furniture/product-1.png"
-                                alt="" class="product-img">
-                            <img class="hover-img"
-                                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/furniture/product-2.png"
+                                alt="" class="Img1">
+                            <img class="Img2"
+                                src="https://new.axilthemes.com/demo/template/etrade/assets/images/product/electric/product-08.png"
                                 alt="">
+                            </div>
                             <span id="sale1">20% OFF</span>
-                        </a>
 
                         <div style="top: 52%;
                     left: 32.7%;" class="product-links">
@@ -1980,6 +2022,7 @@
 
 
             </div>
+
             <div class="explore-product1 mt-4">
 
 
