@@ -19,7 +19,7 @@ $(".slider").slick({
     
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           dots: true
         }
     
@@ -88,6 +88,22 @@ $('.shop-content').slick({
 
 
 
+  
+$('.shop-content2').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1
+});
+	
+
+
+  $('.rsp-boxes').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+
+
 
 
   // explore product 
@@ -98,13 +114,32 @@ $('.shop-content').slick({
     slidesToShow: 4,
     slidesToScroll: 4,
   });
-
+ 
   $('.explore-product1').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4,
-  });
+    
+  }
+  
+  );
 
+  $('.explore-product3').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+ 
+  $('.explore-product4').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    
+  }
+  
+  );
+
+  
 
 
   // users feedback
@@ -112,6 +147,13 @@ $('.shop-content').slick({
   $('.all1').slick({
     infinite: true,
     slidesToShow: 3,
+    slidesToScroll: 1
+  });
+ 
+
+  $('.all2').slick({
+    infinite: true,
+    slidesToShow: 1,
     slidesToScroll: 1
   });
  
@@ -131,6 +173,19 @@ $('.shop-content').slick({
     slidesToScroll: 4,
   });
 
+  $('.detailprdd').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+
+
+  $('.news-product1').slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
+
 
 
   $('.categorie-product').slick({
@@ -140,6 +195,17 @@ $('.shop-content').slick({
     slidesToShow: 7,
     slidesToScroll: 8
   });
+
+
+  $('.categorie-product1').slick({
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    slidesToShow: 1,
+    slidesToScroll: 8
+  });
+  
+ 
 
 
   $('.campaign').slick({
